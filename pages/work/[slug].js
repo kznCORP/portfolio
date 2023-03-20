@@ -124,9 +124,8 @@ const Portfolio = ({ currentWork, otherWork }) => {
                 ))}
             </>
           ))}
-
-        <OtherProjects projects={otherProject} />
       </section>
+      <OtherProjects projects={otherProject} />
       <Footer />
     </>
   );
