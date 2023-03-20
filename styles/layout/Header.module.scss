@@ -1,0 +1,29 @@
+.header {
+  padding: 1.5em 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #222;
+}
+
+.header-name h2 {
+  font-family: "Canela Trial";
+  font-weight: 500;
+  font-size: 1.75em;
+  padding-right: 0.25em;
+}
+
+.menu h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  border-bottom: 1px solid #222;
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding: 2em 2em;
+  }
+}

@@ -1,0 +1,47 @@
+.selected-work {
+  padding: 1.5em 1em;
+}
+
+.sw-header {
+  display: inline-flex;
+  align-items: center;
+  margin: 1em 0;
+  font-family: "Inter", sans-serif;
+}
+
+.sw-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 105%;
+  letter-spacing: -0.6px;
+  color: #222;
+  margin-right: 0.25em;
+}
+
+.sw-count {
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 0.75em;
+}
+
+.sw-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .sw-title {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .selected-work {
+    padding: 2em 2em;
+  }
+
+  .sw-title {
+    font-size: 20px;
+  }
+}
