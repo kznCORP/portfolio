@@ -85,5 +85,8 @@
   color: #a4a4a4;
 }
 
-
-
+@media screen and (min-width: 992px) {
+  .portfolio {
+    display: flex;
+  }
+}
