@@ -1,0 +1,129 @@
+.pf-header {
+  height: 40vh;
+}
+
+.pf-name {
+  font-weight: 500;
+  font-size: 1.25em;
+  letter-spacing: -0.75px;
+}
+
+.pf-ig {
+  margin: 1em 0;
+  padding: 1em 0;
+  color: #a4a4a4;
+  font-weight: 400;
+  font-size: 10px;
+  border-top: 1px solid #a4a4a4;
+}
+
+.pf-info {
+  font-weight: 300;
+  font-size: 0.85em;
+}
+
+.pf-more {
+  margin: 2em 0;
+  display: flex;
+  justify-content: flex-start;
+
+  width: 100%;
+  font-size: 0.95em;
+}
+
+.roles,
+.tools {
+  width: 50%;
+}
+
+.pf-visit {
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 0.25em 0.25em 0.1em 0;
+  font-weight: 300;
+
+  border-bottom: 0.75px solid #222;
+}
+
+// Main Image and Image Gallery
+.pf-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  margin-bottom: 0.5em;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.pf-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Constants
+.pf-grey {
+  font-weight: 300;
+  color: #a4a4a4;
+  letter-spacing: -0.75px;
+}
+
+@media screen and (min-width: 762px) {
+  .project-card {
+    display: flex;
+    gap: 5em;
+    width: 100%;
+  }
+
+  .pf-header {
+    height: auto;
+  }
+
+  .pf-name {
+    font-size: 20px;
+  }
+
+  .pf-project {
+    position: sticky;
+    top: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: calc(100vh - 10em);
+  }
+
+  .pf-gallery {
+    display: inline-flex;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  .pf-grey {
+    letter-spacing: -0.2px;
+  }
+
+  .pf-visit {
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pf-header {
+    font-size: 1.1em;
+  }
+
+  .pf-name {
+    font-size: 1.2em;
+  }
+
+  .pf-ig {
+    font-size: 0.7em;
+  }
+}

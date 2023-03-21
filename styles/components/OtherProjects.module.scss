@@ -32,6 +32,8 @@
 }
 
 .opf-image {
+  width: auto;
+  height: auto;
   object-fit: cover;
   border-radius: 1em;
 }
@@ -52,9 +54,23 @@
 }
 
 @media (min-width: 992px) {
+  .other-projects {
+    margin: 2em;
+  }
+
   .opf-gallery {
     align-items: center;
     justify-content: flex-start;
+  }
+
+  .other-header {
+    margin: 5em 0 1.5em 0;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .opf-img-wrapper{
+    width: 22.5vw;
   }
 
   .opf-image {
