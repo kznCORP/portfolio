@@ -46,15 +46,15 @@ const ProjectCard = ({ project }) => {
           <div className="pf-more">
             <div className="tools">
               <p className="pf-grey">Tools</p>
-              {project.tools.map((tool) => (
-                <p key={tool._id}>{tool}</p>
+              {project.tools.map((tool, id) => (
+                <p key={id}>{tool}</p>
               ))}
             </div>
 
             <div className="roles">
               <p className="pf-grey">Roles</p>
-              {project.roles.map((role) => (
-                <p key={role._id}>{role}</p>
+              {project.roles.map((role, id) => (
+                <p key={id}>{role}</p>
               ))}
             </div>
           </div>

@@ -6,15 +6,13 @@
 .work-post {
   width: 100%;
   padding: 0 0 0.5em 0;
+  
 }
 
 .work-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  filter: grayscale(50%); /* black and white */
-  z-index: 2;
 
   transition: transform 0.5s ease-in-out;
 }
@@ -30,8 +28,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  border-radius: 1em;
   overflow: hidden;
+  border-radius: 0.5em;
 }
 
 .work-title {
