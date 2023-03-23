@@ -4,6 +4,10 @@
   display: flex;
 }
 
+#intro-desktop {
+  display: none;
+}
+
 .intro-left {
   width: 50%;
   margin-top: 5em;
@@ -120,24 +124,46 @@
 
 @media (min-width: 992px) {
   .intro {
-    padding: 1em 2em;
+    padding: 2em 2em;
+  }
+
+  #intro-mobile {
+    display: none;
+  }
+
+  #intro-desktop {
+    display: block;
   }
 
   .intro-description {
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 36px;
     line-height: 105%;
+    letter-spacing: -0.057em;
   }
 
   .intro-role {
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 36px;
     line-height: 105%;
+    letter-spacing: -0.057em;
   }
 
   .left-bracket {
-    font-size: 20px;
+    font-size: 36px;
   }
   .right-bracket {
-    font-size: 20px;
+    font-size: 36px;
+  }
+
+  .intro-code {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .dot-container {
+    display: inline-flex;
+    margin-top: 0.5em;
   }
 
   .blue-dot,

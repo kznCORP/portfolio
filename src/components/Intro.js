@@ -4,7 +4,7 @@ export const Intro = () => {
   return (
     <div className="intro">
       <div className="intro-left">
-        <h1 className="intro-description">
+        <h1 className="intro-description" id="intro-mobile">
           <span className="intro-grey">Jericho Fillon</span>
           <br />
           <span className="intro-role">Software Developer</span>
@@ -12,6 +12,16 @@ export const Intro = () => {
           <span className="intro-role">I build brands, products</span>
           <br />
           <span className="intro-role">and applications</span>
+        </h1>
+
+        <h1 className="intro-description" id="intro-desktop">
+          <span className="intro-grey">Jericho Fillon</span>
+          <br />
+          <span className="intro-role">Software Developer</span>
+          <br />
+          <span className="intro-role">
+            I build brands, products and applications.
+          </span>
         </h1>
 
         <div className="intro-code">
