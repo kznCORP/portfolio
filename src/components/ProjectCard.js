@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { PortableText } from "@portabletext/react";
+import { gsap } from "gsap";
+
 
 import Image from "next/image";
 import Link from "next/link";

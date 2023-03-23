@@ -29,7 +29,7 @@ export const Intro = () => {
         <div className="intro-clients">
           <ul>
             <li className="intro-grey">Partners</li>
-            <li>Apple</li>
+            <li className="coming-soon">KREDO</li>
             <li>Studio Narido</li>
             <li>BCIT</li>
             <li>Haides Edu</li>

@@ -6,10 +6,14 @@ import Footer from "../src/components/Footer";
 
 /*
  * Important
- * [x] Create Sanity Studio for CMS
- * [x] Fetch Data from Sanity API
- * [x] Complete Homepage
- * [ ] Complete Work and [slug].js page
+ * [ ] Complete About page
+ * [ ] Deploy to jerichofillon.com & add Metadata (OpenGraph Images and descriptions)
+ * [ ] Create photos and descriptions for each ProjectCard.
+ * 
+ * Extra
+ * [ ] Add GSAP or Framer animations
+ * [ ] Optimize for performance
+ * [ ] Dark mode
  *
  */
 
