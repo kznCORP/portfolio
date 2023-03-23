@@ -6,7 +6,7 @@ import Footer from "../src/components/Footer";
 
 /*
  * Important
- * [ ] Complete About page
+ * [x] Complete About page
  * [ ] Deploy to jerichofillon.com & add Metadata (OpenGraph Images and descriptions)
  * [ ] Create photos and descriptions for each ProjectCard.
  * 

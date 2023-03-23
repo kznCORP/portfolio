@@ -51,7 +51,7 @@
   width: 100%;
   height: 75vh;
   object-fit: cover;
-  filter: blur(2px);
+  filter: blur(4px);
 }
 
 .grey {
@@ -69,7 +69,7 @@
 
   .about-image {
     height: 750px;
-    filter: blur(8px);
+    filter: blur(12px);
   }
 }
 
@@ -119,6 +119,6 @@
 
   .about-image {
     margin: 8em 0 1em 0;
-    filter: blur(8px);
+    filter: blur(16px);
   }
 }
