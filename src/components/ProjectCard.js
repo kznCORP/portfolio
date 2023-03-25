@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 import { PortableText } from "@portabletext/react";
 import { gsap } from "gsap";
 
-
 import Image from "next/image";
 import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
@@ -72,8 +71,8 @@ const ProjectCard = ({ project }) => {
           <Image
             src={project.mainImage.url()}
             alt={`${project.title} image`}
-            width={250}
-            height={250}
+            width={1500}
+            height={1500}
             loading="lazy"
             className="pf-image"
           />
@@ -85,8 +84,8 @@ const ProjectCard = ({ project }) => {
               <Image
                 src={img.url()}
                 alt={`${img.title} image`}
-                height={250}
-                width={250}
+                width={1500}
+                height={1500}
                 loading="lazy"
                 className="pf-image"
               />

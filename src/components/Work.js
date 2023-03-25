@@ -13,8 +13,8 @@ export const Work = ({ mappedWork }) => {
                 <Image
                   src={work.mainImage.url()}
                   alt={`${work.title} image`}
-                  width={250}
-                  height={250}
+                  width={1500}
+                  height={1500}
                   loading="lazy"
                   className="work-image"
                 />
