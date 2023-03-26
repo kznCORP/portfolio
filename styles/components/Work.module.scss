@@ -6,7 +6,7 @@
 .work-post {
   width: 100%;
   padding: 0 0 0.5em 0;
-  
+  cursor: pointer;
 }
 
 .work-image {
@@ -39,7 +39,7 @@
 
   display: inline-flex;
   align-items: center;
-  margin: 1em 0;
+  margin: 1em 0 0.25em 0;
   font-family: "Inter", sans-serif;
 
   font-family: "Inter", sans-serif;
@@ -47,6 +47,12 @@
   font-size: 1em;
   letter-spacing: -0.75px;
   z-index: 3;
+}
+
+.work-count {
+  font-weight: 400;
+  font-size: 10px;
+  margin: 0 0 1em 0.5em;
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {

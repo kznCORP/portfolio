@@ -18,7 +18,14 @@ export const Work = ({ mappedWork }) => {
                   loading="lazy"
                   className="work-image"
                 />
-                <h2 className="work-title">{work.title}</h2>
+                <h2 className="work-title">
+                  {work.title}
+                  <span>
+                    <p className="work-count">
+                      &#91;{work.imagesGallery.length + 1}&#93;
+                    </p>
+                  </span>
+                </h2>
               </div>
             </Link>
             {/* End of Main Image */}

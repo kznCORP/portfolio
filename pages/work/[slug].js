@@ -6,27 +6,29 @@ import OtherProjects from "../../src/components/OtherProjects";
 import Footer from "../../src/components/Footer";
 import ProjectCard from "../../src/components/ProjectCard";
 
-const imgBuilder = SanityImageURLBuilder({
-  projectId: "xeyhewdq",
-  dataset: "production",
-});
-
 const Portfolio = ({ currentWork, otherWork }) => {
   const [currentProject, setCurrentProject] = useState([]);
   const [otherProject, setOtherProject] = useState([]);
+
+  const memoizedImageBuilder = useMemo(() => {
+    return SanityImageURLBuilder({
+      projectId: "xeyhewdq",
+      dataset: "production",
+    });
+  }, []);
 
   const memoizedSetCurrentProject = useCallback(
     (projects) =>
       setCurrentProject(
         projects.map((project) => ({
           ...project,
-          mainImage: imgBuilder.image(project.mainImage),
+          mainImage: memoizedImageBuilder.image(project.mainImage),
           imagesGallery: project.imagesGallery.map((img) =>
-            imgBuilder.image(img)
+            memoizedImageBuilder.image(img)
           ),
         }))
       ),
-    []
+    [memoizedImageBuilder]
   );
 
   const memoizedSetOtherProject = useCallback(
@@ -34,13 +36,13 @@ const Portfolio = ({ currentWork, otherWork }) => {
       setOtherProject(
         projects.map((project) => ({
           ...project,
-          mainImage: imgBuilder.image(project.mainImage),
+          mainImage: memoizedImageBuilder.image(project.mainImage),
           imagesGallery: project.imagesGallery.map((img) =>
-            imgBuilder.image(img)
+            memoizedImageBuilder.image(img)
           ),
         }))
       ),
-    []
+    [memoizedImageBuilder]
   );
 
   useMemo(() => {

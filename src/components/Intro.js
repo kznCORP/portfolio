@@ -38,7 +38,7 @@ export const Intro = () => {
       <div className="intro-right">
         <div className="intro-clients">
           <ul>
-            <li className="intro-grey">Partners</li>
+            <li className="intro-grey">Clients</li>
             <li className="coming-soon">KREDO</li>
             <li>Studio Narido</li>
             <li>BCIT</li>
