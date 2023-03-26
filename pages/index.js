@@ -7,12 +7,12 @@ import Footer from "../src/components/Footer";
 /*
  * Important
  * [x] Complete About page
- * [ ] Deploy to jerichofillon.com & add Metadata (OpenGraph Images and descriptions)
- * [ ] Create photos and descriptions for each ProjectCard.
+ * [x] Create photos and descriptions for each ProjectCard.
+ * [ ] Add Metadata (OpenGraph Images and descriptions)
+ * [ ] Optimize for performance (Caching API calls and CDN for images)
  * 
  * Extra
  * [ ] Add GSAP or Framer animations
- * [ ] Optimize for performance
  * [ ] Dark mode
  *
  */
