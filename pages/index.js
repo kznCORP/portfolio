@@ -10,7 +10,7 @@ import Footer from "../src/components/Footer";
  * [x] Create photos and descriptions for each ProjectCard.
  * [ ] Add Metadata (OpenGraph Images and descriptions)
  * [ ] Optimize for performance (Caching API calls and CDN for images)
- * 
+ *
  * Extra
  * [ ] Add GSAP or Framer animations
  * [ ] Dark mode
@@ -31,7 +31,7 @@ const Home = ({ work }) => {
 
 export default Home;
 
-export const getServerSideProps = async (pageContext) => {
+export const getStaticProps = async () => {
   const query = encodeURIComponent(`*[ _type == "post" ]`);
   const queryURL = `https://xeyhewdq.api.sanity.io/v1/data/query/production?query=${query}`;
 
@@ -45,5 +45,7 @@ export const getServerSideProps = async (pageContext) => {
     props: {
       work,
     },
+    // revalidate: 1209600 //Cache response for 2 weeks (Replace when production is complete)
+    revalidate: 120, // cache the response for 120 seconds
   };
 };

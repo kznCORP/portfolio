@@ -77,21 +77,30 @@ const Portfolio = ({ currentWork, otherWork }) => {
 
 export default Portfolio;
 
-export const getServerSideProps = async (pageContext) => {
-  const portfolioSlug = pageContext.query.slug;
+// Fetch all slugs from SanityAPI then pass into getStaticProps.
+export const getStaticPaths = async () => {
+  const query = encodeURIComponent(`*[ _type == "post" ]`);
+  const url = `https://xeyhewdq.api.sanity.io/v1/data/query/production?query=${query}`;
 
-  // 404 page
-  if (!portfolioSlug) {
-    return {
-      notFound: true,
-    };
-  }
+  const result = await fetch(url).then((res) => res.json());
+  const paths = result?.result?.map((post) => ({
+    params: { slug: post.slug.current },
+  }));
+
+  return {
+    paths,
+    fallback: false, // Any non-existing slug return 404 page.
+  };
+};
+
+export const getStaticProps = async ({ params }) => {
+  const { slug } = params;
 
   const currWorkQuery = encodeURIComponent(
-    `*[ _type == "post" && slug.current == "${portfolioSlug}" ]`
+    `*[ _type == "post" && slug.current == "${slug}" ]`
   );
   const otherWorkQuery = encodeURIComponent(
-    `*[ _type == "post" && slug.current != "${portfolioSlug}" ]`
+    `*[ _type == "post" && slug.current != "${slug}" ]`
   );
 
   const currWorkURL = `https://xeyhewdq.api.sanity.io/v1/data/query/production?query=${currWorkQuery}`;
