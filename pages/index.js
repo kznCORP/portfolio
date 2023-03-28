@@ -9,7 +9,7 @@ import Footer from "../src/components/Footer";
  * [x] Complete About page
  * [x] Create photos and descriptions for each ProjectCard.
  * [ ] Add Metadata (OpenGraph Images and descriptions)
- * [ ] Optimize for performance (Caching API calls and CDN for images)
+ * [x] Optimize for performance (Caching API calls and CDN for images)
  *
  * Extra
  * [ ] Add GSAP or Framer animations
