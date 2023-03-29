@@ -58,7 +58,6 @@ export const Intro = () => {
             <li>Front-end dev</li>
             <li>Mock-ups</li>
             <li>Prototyping</li>
-            <li>SEO</li>
             <li>Websites</li>
           </ul>
         </div>

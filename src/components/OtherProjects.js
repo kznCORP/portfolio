@@ -17,8 +17,8 @@ const OtherProjects = ({ projects }) => {
                 <Image
                   src={project.mainImage.url()}
                   alt={`${project.title} image`}
-                  width={350}
-                  height={350}
+                  width={300}
+                  height={300}
                   loading="lazy"
                   className="opf-image"
                 />
