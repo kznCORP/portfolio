@@ -42,9 +42,7 @@ export const Intro = () => {
             <li className="coming-soon">KREDO</li>
             <li>Studio Narido</li>
             <li>BCIT</li>
-            <li>Haides Edu</li>
-            <li>Unlikely Citizen</li>
-            <li>CD</li>
+            <li>...</li>
           </ul>
         </div>
 

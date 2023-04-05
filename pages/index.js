@@ -46,6 +46,6 @@ export const getStaticProps = async () => {
       work,
     },
     // revalidate: 1209600 //Cache response for 2 weeks (Replace when production is complete)
-    revalidate: 120, // cache the response for 120 seconds
+    // revalidate: 120, 
   };
 };

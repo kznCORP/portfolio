@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import { PortableText } from "@portabletext/react";
-import { gsap } from "gsap";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -34,9 +33,21 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div key={project._id} className="project-card">
+      <div className="pf-mobile">
+        <div className="pf-img-wrapper">
+          <Image
+            src={project.mainImage.url()}
+            alt={`${project.title} image`}
+            width={1500}
+            height={1500}
+            loading="lazy"
+            className="pf-image"
+          />
+        </div>
+      </div>
+
       <div className="pf-project">
         <div className="pf-header">
-          <p className="pf-grey">Project Name</p>
           <h2 className="pf-name">{project.title}</h2>
           <p className="pf-ig">@{project.instagram}</p>
         </div>
@@ -45,17 +56,17 @@ const ProjectCard = ({ project }) => {
           <p className="pf-grey">Project Details</p>
           <PortableText value={project.body} />
           <div className="pf-more">
-            <div className="tools">
-              <p className="pf-grey">Tools</p>
-              {project.tools.map((tool, id) => (
-                <p key={id}>{tool}</p>
-              ))}
-            </div>
-
             <div className="roles">
               <p className="pf-grey">Roles</p>
               {project.roles.map((role, id) => (
                 <p key={id}>{role}</p>
+              ))}
+            </div>
+
+            <div className="tools">
+              <p className="pf-grey">Tools</p>
+              {project.tools.map((tool, id) => (
+                <p key={id}>{tool}</p>
               ))}
             </div>
           </div>
@@ -67,28 +78,40 @@ const ProjectCard = ({ project }) => {
       </div>
 
       <div className="pf-gallery" ref={galleryRef}>
-        <div className="pf-img-wrapper">
-          <Image
-            src={project.mainImage.url()}
-            alt={`${project.title} image`}
-            width={1500}
-            height={1500}
-            loading="lazy"
-            className="pf-image"
-          />
+        <div className="img-gallery pf-desktop">
+          <div className="pf-img-wrapper">
+            <Image
+              src={project.mainImage.url()}
+              alt={`${project.title} image`}
+              width={1500}
+              height={1500}
+              loading="lazy"
+              className="pf-image"
+            />
+          </div>
+
+          <div className="pf-img-alt">
+            <p>Homepage, responsive</p>
+          </div>
         </div>
 
         {project.imagesGallery?.length &&
           project.imagesGallery.map((img) => (
-            <div className="pf-img-wrapper" key={uuidv4()}>
-              <Image
-                src={img.url()}
-                alt={`${img.title} image`}
-                width={1500}
-                height={1500}
-                loading="lazy"
-                className="pf-image"
-              />
+            <div className="img-gallery" key={uuidv4()}>
+              <div className="pf-img-wrapper">
+                <Image
+                  src={img.url()}
+                  alt={`${img.title} image`}
+                  width={1500}
+                  height={1500}
+                  loading="lazy"
+                  className="pf-image"
+                />
+              </div>
+
+              <div className="pf-img-alt">
+                <p>{img.options.source.alt}</p>
+              </div>
             </div>
           ))}
       </div>
