@@ -4,19 +4,6 @@ import Intro from "../src/components/Intro";
 import SelectedWork from "../src/components/SelectedWork";
 import Footer from "../src/components/Footer";
 
-/*
- * Important
- * [x] Complete About page
- * [x] Create photos and descriptions for each ProjectCard.
- * [ ] Add Metadata (OpenGraph Images and descriptions)
- * [x] Optimize for performance (Caching API calls and CDN for images)
- *
- * Extra
- * [ ] Add GSAP or Framer animations
- * [ ] Dark mode
- *
- */
-
 const Home = ({ work }) => {
   return (
     <>
@@ -45,7 +32,5 @@ export const getStaticProps = async () => {
     props: {
       work,
     },
-    // revalidate: 1209600 //Cache response for 2 weeks (Replace when production is complete)
-    // revalidate: 120, 
   };
 };
