@@ -32,7 +32,7 @@ export const SelectedWork = ({ work }) => {
     <section className="selected-work">
       <div className="sw-header">
         <h3 className="sw-title">Selected Work</h3>
-        <p className="sw-count">&#91;4&#93;</p>
+        <p className="sw-count">&#91;5&#93;</p>
       </div>
 
       <div className="sw-content">

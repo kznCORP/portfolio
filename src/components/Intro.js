@@ -39,8 +39,10 @@ export const Intro = () => {
         <div className="intro-clients">
           <ul>
             <li className="intro-grey">Clients</li>
-            <li className="coming-soon">KREDO</li>
+            <li>Oreck Karby [WIP]</li>
+            <li>GIP</li>
             <li>Studio Narido</li>
+            <li>Haides Edu</li>
             <li>BCIT</li>
             <li>...</li>
           </ul>
@@ -52,8 +54,7 @@ export const Intro = () => {
             <li>App design</li>
             <li>Brand identity</li>
             <li>Design systems</li>
-            <li>E-commerce</li>
-            <li>Front-end dev</li>
+            <li>Software development</li>
             <li>Mock-ups</li>
             <li>Prototyping</li>
             <li>Websites</li>

@@ -42,6 +42,10 @@ const Footer = () => {
               <Link href="https://www.linkedin.com/in/jericho-fillon-24a692174/">
                 <li>LinkedIn</li>
               </Link>
+
+              <Link href="https://github.com/kznCORP/">
+                <li>GitHub</li>
+              </Link>
             </ul>
           </div>
 
