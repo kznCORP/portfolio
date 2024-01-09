@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import Meta from "../src/components/Meta";
 import Header from "../src/components/Header";
 import Intro from "../src/components/Intro";
@@ -12,6 +14,7 @@ const Home = ({ work }) => {
       <Intro />
       <SelectedWork work={work} />
       <Footer />
+      <Analytics />
     </>
   );
 };
